@@ -1,3 +1,15 @@
+"""
+Train a Top-K Sparse Autoencoder (SAE) on language model activations.
+
+The script loads MLP activations from a pickle dataset, trains a Top-K SAE
+to learn sparse feature representations, and saves the best model based on
+normalized reconstruction loss. Supports mean-pooled or token-level
+activations, learning rate scheduling, and early stopping.
+
+The output is a trained SAE checkpoint that can be used to analyze and
+visualize learned features.
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
