@@ -1,6 +1,10 @@
 # sae-geographic-orthographic-confound
 
-Full code will be released soon.
+## Set-up the conda environement
+```
+conda env create env.yaml -n xai_env || conda env update -f env.yaml
+conda activate xai_env
+```
 
 ## Creating prompt from GeoNames and extracting model's activations
 + Download and extract GeoNames data : 
